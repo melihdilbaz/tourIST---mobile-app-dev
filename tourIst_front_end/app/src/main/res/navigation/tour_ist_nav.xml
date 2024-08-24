@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tour_ist_nav"
+    app:startDestination="@id/mainScreen">
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="com.example.tourist.MainScreen"
+        android:label="Home"
+        tools:layout="@layout/fragment_main_screen">
+        <action
+            android:id="@+id/action_mainScreen_to_searchResultScreen"
+            app:destination="@id/searchResultScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_itineraryListScreen"
+            app:destination="@id/itineraryListScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchResultScreen"
+        android:name="com.example.tourist.SearchResultScreen"
+        android:label="Destinations"
+        tools:layout="@layout/fragment_search_result_screen">
+        <action
+            android:id="@+id/action_searchResultScreen_to_detailedInfoScreen"
+            app:destination="@id/detailedInfoScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/itineraryListScreen"
+        android:name="com.example.tourist.ItineraryListScreen"
+        android:label="Itineraries"
+        tools:layout="@layout/fragment_itinerary_list_screen">
+        <action
+            android:id="@+id/action_itineraryListScreen_to_itineraryScreen"
+            app:destination="@id/itineraryScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailedInfoScreen"
+        android:name="com.example.tourist.DetailedInfoScreen"
+        android:label="Details"
+        tools:layout="@layout/fragment_detailed_info_screen">
+        <action
+            android:id="@+id/action_detailedInfoScreen_to_commentScreen"
+            app:destination="@id/commentScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/commentScreen"
+        android:name="com.example.tourist.CommentScreen"
+        android:label="Comments"
+        tools:layout="@layout/fragment_comment_screen" />
+    <fragment
+        android:id="@+id/itineraryScreen"
+        android:name="com.example.tourist.ItineraryScreen"
+        android:label="Itinerary"
+        tools:layout="@layout/fragment_itinerary_screen" />
+</navigation>

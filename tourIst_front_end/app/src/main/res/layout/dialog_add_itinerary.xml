@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/txtItinerary"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Enter the name" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:contentDescription="Post comment button"
+        android:text="Create" />
+
+</LinearLayout>
